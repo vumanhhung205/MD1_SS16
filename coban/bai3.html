@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function KyTuSo(kyTu) {
+            var a = /^\d$/;
+            return a.test(kyTu);
+        }
+        var kyTu = prompt("Nhập một ký tự:");
+        var laSo = KyTuSo(kyTu);
+        if (laSo) {
+            console.log(kyTu + " là ký tự số.");
+        } else {
+            console.log(kyTu + " không phải là ký tự số.");
+        }
+    </script>
+</body>
+</html>
